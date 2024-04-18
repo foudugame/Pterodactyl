@@ -35,4 +35,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/pterodactyl/dsm:${{ matrix.dsm }}
+            ghcr.io/foudugame/pterodactyl/dsm:${{ matrix.dsm }}
