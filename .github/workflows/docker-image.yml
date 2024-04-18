@@ -16,7 +16,6 @@ jobs:
       fail-fast: false
       matrix:
         dsm:
-          - source
           - os
     steps:
       - uses: actions/checkout@v3
