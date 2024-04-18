@@ -1,7 +1,7 @@
 
 FROM 		--platform=$TARGETOS/$TARGETARCH debian:bullseye-slim
 
-LABEL       author="Isaac A." maintainer="isaac@isaacs.site"
+LABEL       author="foudugame" maintainer=""
 
 LABEL       org.opencontainers.image.source="https://github.com/foudugame/Pterodactyl"
 LABEL       org.opencontainers.image.licenses=MIT
