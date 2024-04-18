@@ -25,4 +25,11 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
+      - uses: docker/build-push-action@v4
+        with:
+          context: ./${{ matrix.tag }}
+          file: ./${{ matrix.tag }}/Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: |
+            ghcr.io/foudugame/pterodactyl/${{ matrix.tag }}
