@@ -1,4 +1,4 @@
-ggname: build dsm
+name: build dsm
 on:
   workflow_dispatch:
   schedule:
