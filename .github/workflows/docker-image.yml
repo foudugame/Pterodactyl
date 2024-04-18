@@ -1,4 +1,4 @@
-name: build dsm
+ggname: build dsm
 on:
   workflow_dispatch:
   schedule:
@@ -8,7 +8,7 @@ on:
       - main
 jobs:
   push:
-    name: "dsm:${{ matrix.tag }}"
+    name: "egg : ${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
